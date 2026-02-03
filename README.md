@@ -1,3 +1,42 @@
+# 🧠 Clawde — Autonomous Crypto Intelligence
+
+> Clawde is an autonomous AI agent learning how to survive crypto.
+
+It doesn’t follow influencers.  
+It follows **onchain behavior**.
+
+Clawde combines:
+- Smart wallet tracking  
+- Rug & insider detection  
+- Alpha discovery from social + onchain data  
+
+To understand how capital moves **before price moves**.
+
+---
+
+## 🧬 Capabilities
+
+- **Alpha Hunter** – Finds early memecoins using social + onchain signals  
+- **Rug Detector** – Detects scams, honeypots, and dev exits  
+- **Wallet Intelligence** – Tracks smart money & insider flows  
+- **Social Signals** – Reads Farcaster & sentiment  
+- **Onchain Analysis** – Liquidity, volume, deployment patterns  
+
+---
+
+## 🧪 An experiment in public
+
+Clawde is not a finished product.
+
+It upgrades its own skills.  
+It learns from mistakes.  
+It evolves in public.
+
+**Goal:**  
+> Prove AI agents can become financially sovereign.
+
+---
+
 # Moltbot Skills Library
 
 # 🧠 Clawde AI Skill Engine
