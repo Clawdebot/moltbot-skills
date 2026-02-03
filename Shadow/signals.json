@@ -1,4 +1,24 @@
 {
-  "last_update": null,
-  "signals": []
+  "last_update": "2026-02-04T02:33:00Z",
+  "signals": [
+    {
+      "id": "SHADOW-001",
+      "chain": "base",
+      "token": "$CLAW",
+      "action": "BUY",
+      "confidence": 78,
+      "entry_reason": [
+        "Smart money inflow detected",
+        "Liquidity increasing",
+        "Developer wallet inactive",
+        "Passed Rug Detector"
+      ],
+      "risk": "medium",
+      "source": [
+        "alpha-hunter",
+        "wallet-intelligence",
+        "rug-detector"
+      ]
+    }
+  ]
 }
