@@ -1,6 +1,17 @@
 # Moltbot Skills Library
 
-Public repository of skills for [Moltbot](https://github.com/BankrBot/moltbot-skills) (formerly Clawdbot) — including [Bankr](https://bankr.bot) skills and community-contributed skills from other providers.
+# 🧠 Clawde AI Skill Engine
+
+This repository is an AI-powered crypto intelligence system for Moltbot.
+
+It adds:
+- Alpha hunting
+- Rug pull detection
+- Smart wallet tracking
+- Social + onchain signal fusion
+
+Powered by Clawde AI.
+
 
 ## Structure
 
@@ -33,17 +44,20 @@ moltbot-skills/
 Give Moltbot the URL to this repo and it will let you choose which skill to install.
 
 ```
-https://github.com/BankrBot/moltbot-skills
+https://github.com/Clawdebot/moltbot-skills
+
 ```
 
 ## Available Skills
 
-| Provider                   | Skill           | Description                                                                                               |
-| -------------------------- | --------------- | --------------------------------------------------------------------------------------------------------- |
-| [bankr](https://bankr.bot) | [bankr](bankr/) | AI-powered crypto trading agent via natural language. Trade, manage portfolios, automate DeFi operations. |
-| base                       | —               | Placeholder                                                                                               |
-| neynar                     | —               | Placeholder                                                                                               |
-| zapper                     | —               | Placeholder                                                                                               |
+| Provider | Skill | Description |
+|---------|-------|-------------|
+| bankr | bankr | AI-powered crypto trading |
+| Alpha | alpha-hunter | Finds memecoins before pumps using onchain + social signals |
+| Rug | rug-detector | Detects scams, honeypots, and rug pulls |
+| neynar | - | Social data provider |
+| zapper | - | Portfolio & DeFi data |
+
 
 ## Contributing
 
