@@ -1,7 +1,7 @@
 name: rug-detector
 description: >
-  AI-powered rug pull detection system that analyzes smart contract risk,
-  liquidity safety, insider wallets, and deployer behavior.
+  Detects rug pulls, honeypots, insider dumps, and developer exit patterns
+  by analyzing token behavior, wallet flows, and liquidity changes.
 
 inputs:
   token:
@@ -11,16 +11,25 @@ inputs:
   chain:
     type: string
     enum: [eth, base, sol]
-    description: Blockchain of the token
 
 outputs:
   risk_score:
     type: number
-    description: 0–100, higher = more dangerous
+    description: 0–100 probability the token is a rug or scam
 
-  verdict:
+  rug_type:
     type: string
-    enum: [safe, warning, scam]
+    description: honeypot, soft rug, hard rug, insider dump, or safe
 
-  reasons:
+  signals:
     type: list
+    description: Detected warning signs
+
+  wallets_flagged:
+    type: list
+    description: Wallets linked to suspicious activity
+
+  liquidity_events:
+    type: list
+    description: LP add/remove, drains, or locks
+    
