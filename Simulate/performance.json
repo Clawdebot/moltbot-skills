@@ -1,62 +1,63 @@
 {
-  "runs": 1,
+  "runs": 2,
   "last_run": "2026-02-04",
   "chain": "base",
   "risk_profile": "degen",
 
   "capital": {
     "starting": 10000,
-    "current": 10420,
-    "pnl_percent": 4.2
+    "current": 10972,
+    "pnl_percent": 9.7
   },
 
   "performance": {
-    "win_rate": 0.666,
-    "max_drawdown": 0.011,
-    "avg_trade_return": 0.092,
-    "trades": 3,
-    "wins": 2,
-    "losses": 1
+    "win_rate": 0.60,
+    "max_drawdown": 0.014,
+    "avg_trade_return": 0.19,
+    "trades": 5,
+    "wins": 3,
+    "losses": 2
   },
 
   "strategy_weights": {
-    "smart_money_score": 0.35,
+    "smart_money_score": 0.40,
     "liquidity_growth": 0.20,
     "rug_safety": 0.20,
     "developer_reputation": 0.10,
-    "social_velocity": 0.10,
+    "social_velocity": 0.05,
     "holder_growth": 0.05
   },
 
   "risk_adjustments": {
-    "dev_wallet_selling_penalty": 1.25,
-    "liquidity_removal_penalty": 1.15,
-    "insider_cluster_penalty": 1.10
+    "dev_wallet_selling_penalty": 1.35,
+    "liquidity_removal_penalty": 1.20,
+    "insider_cluster_penalty": 1.20
   },
 
   "learning": {
     "what_worked": [
-      "Smart money inflow predicted $CLAW correctly",
-      "Liquidity growth confirmed $BYTE trend",
-      "Rug detector avoided catastrophic loss on $SCAM"
+      "Smart money inflow predicted $CLAW and $BOLT correctly",
+      "Liquidity growth filter avoided weak tokens",
+      "Rug detector prevented catastrophic loss on scam tokens"
     ],
     "what_failed": [
-      "Developer wallet exits still cause small losses"
+      "Insider exits still caused small losses on $ZYN"
     ],
     "logic_updates": [
       "Increase smart money weighting",
-      "Increase penalty for developer wallet selling",
-      "Tighten rug safety filter"
+      "Increase insider exit penalty",
+      "Stricter rug safety requirement"
     ]
   },
 
   "next_run_plan": {
-    "min_wallet_score": 75,
-    "max_rug_risk": 25,
+    "min_wallet_score": 80,
+    "max_rug_risk": 20,
     "prefer_tokens_with": [
       "smart_money_inflow",
-      "growing_liquidity",
-      "low dev wallet activity"
+      "liquidity_growth",
+      "low developer activity",
+      "no insider clusters"
     ]
   }
 }
