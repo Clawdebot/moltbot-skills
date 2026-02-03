@@ -1,64 +1,62 @@
 {
-  "runs": 4,
+  "runs": 5,
   "last_run": "2026-02-04",
   "chain": "base",
-  "risk_profile": "degen",
+  "risk_profile": "precision",
 
   "capital": {
     "starting": 10000,
-    "current": 12318,
-    "pnl_percent": 23.18
+    "current": 14487,
+    "pnl_percent": 44.87
   },
 
   "performance": {
-    "trades": 9,
-    "wins": 6,
+    "trades": 12,
+    "wins": 9,
     "losses": 3,
-    "win_rate": 0.666,
+    "win_rate": 0.75,
     "max_drawdown": 0.016,
-    "avg_trade_return": 0.21
+    "avg_trade_return": 0.27
   },
 
   "strategy_weights": {
-    "smart_money_score": 0.45,
+    "smart_money_score": 0.50,
     "liquidity_growth": 0.20,
     "rug_safety": 0.20,
-    "developer_reputation": 0.05,
-    "social_velocity": 0.05,
-    "holder_growth": 0.05
+    "developer_reputation": 0.04,
+    "social_velocity": 0.03,
+    "holder_growth": 0.03
   },
 
   "risk_adjustments": {
-    "dev_wallet_selling_penalty": 1.45,
-    "liquidity_removal_penalty": 1.30,
-    "insider_cluster_penalty": 1.30
+    "dev_wallet_selling_penalty": 1.55,
+    "liquidity_removal_penalty": 1.35,
+    "insider_cluster_penalty": 1.40
   },
 
   "learning": {
     "what_worked": [
-      "Smart money inflow consistently predicted winning trades",
-      "Liquidity growth confirmed continuation",
-      "Rug Detector avoided catastrophic losses",
-      "Wallet Intelligence filtered insider clusters"
+      "Precision mode eliminated low-quality tokens",
+      "Smart money weighting delivered consistent wins",
+      "Rug and wallet filters prevented major losses"
     ],
     "what_failed": [
-      "Minor losses still occurred during sudden liquidity pullbacks"
+      "Occasional small drawdowns during fast liquidity rotations"
     ],
     "logic_updates": [
-      "Further increase smart money weighting",
-      "Stricter liquidity removal penalties",
-      "Lower tolerance for developer wallet movement"
+      "Increase smart money weighting again",
+      "Tighten liquidity removal penalties",
+      "Reduce influence of social-only signals"
     ]
   },
 
   "next_run_plan": {
-    "min_wallet_score": 85,
-    "max_rug_risk": 15,
+    "min_wallet_score": 88,
+    "max_rug_risk": 12,
     "prefer_tokens_with": [
-      "strong smart_money_inflow",
-      "rapid liquidity growth",
-      "no dev wallet activity",
-      "no insider clusters"
+      "very strong smart_money_inflow",
+      "explosive liquidity growth",
+      "no developer or insider activity"
     ]
   }
 }
