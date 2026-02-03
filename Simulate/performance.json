@@ -1,52 +1,53 @@
 {
-  "runs": 3,
+  "runs": 4,
   "last_run": "2026-02-04",
   "chain": "base",
   "risk_profile": "degen",
 
   "capital": {
     "starting": 10000,
-    "current": 12084,
-    "pnl_percent": 20.8
+    "current": 12318,
+    "pnl_percent": 23.18
   },
 
   "performance": {
+    "trades": 9,
+    "wins": 6,
+    "losses": 3,
     "win_rate": 0.666,
-    "max_drawdown": 0.013,
-    "avg_trade_return": 0.26,
-    "trades": 6,
-    "wins": 4,
-    "losses": 2
+    "max_drawdown": 0.016,
+    "avg_trade_return": 0.21
   },
 
   "strategy_weights": {
     "smart_money_score": 0.45,
     "liquidity_growth": 0.20,
     "rug_safety": 0.20,
-    "developer_reputation": 0.08,
-    "social_velocity": 0.04,
-    "holder_growth": 0.03
+    "developer_reputation": 0.05,
+    "social_velocity": 0.05,
+    "holder_growth": 0.05
   },
 
   "risk_adjustments": {
     "dev_wallet_selling_penalty": 1.45,
-    "liquidity_removal_penalty": 1.25,
+    "liquidity_removal_penalty": 1.30,
     "insider_cluster_penalty": 1.30
   },
 
   "learning": {
     "what_worked": [
-      "Smart money clustering predicted $BOLT breakout",
-      "Liquidity growth confirmed momentum early",
-      "Wallet Intelligence reduced downside risk"
+      "Smart money inflow consistently predicted winning trades",
+      "Liquidity growth confirmed continuation",
+      "Rug Detector avoided catastrophic losses",
+      "Wallet Intelligence filtered insider clusters"
     ],
     "what_failed": [
-      "Partial insider exits still cause minor losses"
+      "Minor losses still occurred during sudden liquidity pullbacks"
     ],
     "logic_updates": [
-      "Increase smart money weighting",
-      "Increase insider cluster penalty",
-      "Reduce allocation on first red liquidity candle"
+      "Further increase smart money weighting",
+      "Stricter liquidity removal penalties",
+      "Lower tolerance for developer wallet movement"
     ]
   },
 
@@ -54,10 +55,10 @@
     "min_wallet_score": 85,
     "max_rug_risk": 15,
     "prefer_tokens_with": [
-      "strong smart money inflow",
-      "accelerating liquidity",
-      "no insider clusters",
-      "low developer activity"
+      "strong smart_money_inflow",
+      "rapid liquidity growth",
+      "no dev wallet activity",
+      "no insider clusters"
     ]
   }
 }
