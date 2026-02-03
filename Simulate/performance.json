@@ -1,63 +1,63 @@
 {
-  "runs": 2,
+  "runs": 3,
   "last_run": "2026-02-04",
   "chain": "base",
   "risk_profile": "degen",
 
   "capital": {
     "starting": 10000,
-    "current": 10972,
-    "pnl_percent": 9.7
+    "current": 12084,
+    "pnl_percent": 20.8
   },
 
   "performance": {
-    "win_rate": 0.60,
-    "max_drawdown": 0.014,
-    "avg_trade_return": 0.19,
-    "trades": 5,
-    "wins": 3,
+    "win_rate": 0.666,
+    "max_drawdown": 0.013,
+    "avg_trade_return": 0.26,
+    "trades": 6,
+    "wins": 4,
     "losses": 2
   },
 
   "strategy_weights": {
-    "smart_money_score": 0.40,
+    "smart_money_score": 0.45,
     "liquidity_growth": 0.20,
     "rug_safety": 0.20,
-    "developer_reputation": 0.10,
-    "social_velocity": 0.05,
-    "holder_growth": 0.05
+    "developer_reputation": 0.08,
+    "social_velocity": 0.04,
+    "holder_growth": 0.03
   },
 
   "risk_adjustments": {
-    "dev_wallet_selling_penalty": 1.35,
-    "liquidity_removal_penalty": 1.20,
-    "insider_cluster_penalty": 1.20
+    "dev_wallet_selling_penalty": 1.45,
+    "liquidity_removal_penalty": 1.25,
+    "insider_cluster_penalty": 1.30
   },
 
   "learning": {
     "what_worked": [
-      "Smart money inflow predicted $CLAW and $BOLT correctly",
-      "Liquidity growth filter avoided weak tokens",
-      "Rug detector prevented catastrophic loss on scam tokens"
+      "Smart money clustering predicted $BOLT breakout",
+      "Liquidity growth confirmed momentum early",
+      "Wallet Intelligence reduced downside risk"
     ],
     "what_failed": [
-      "Insider exits still caused small losses on $ZYN"
+      "Partial insider exits still cause minor losses"
     ],
     "logic_updates": [
       "Increase smart money weighting",
-      "Increase insider exit penalty",
-      "Stricter rug safety requirement"
+      "Increase insider cluster penalty",
+      "Reduce allocation on first red liquidity candle"
     ]
   },
 
   "next_run_plan": {
-    "min_wallet_score": 80,
-    "max_rug_risk": 20,
+    "min_wallet_score": 85,
+    "max_rug_risk": 15,
     "prefer_tokens_with": [
-      "smart_money_inflow",
-      "liquidity_growth",
-      "low developer activity",
-      "no insider clusters"
+      "strong smart money inflow",
+      "accelerating liquidity",
+      "no insider clusters",
+      "low developer activity"
     ]
   }
 }
