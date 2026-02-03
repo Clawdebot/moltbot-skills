@@ -2,8 +2,8 @@ name: alpha-hunter
 
 description: >
   Discovers early crypto alpha by detecting pre-pump wallet behavior,
-  deployer patterns, liquidity events, and social acceleration before
-  tokens trend publicly.
+  deployer patterns, liquidity events, and social acceleration —
+  while filtering out scams using Rug Detector.
 
 inputs:
   chain:
@@ -29,28 +29,28 @@ outputs:
 
   rejected:
     type: list
-    description: Tokens filtered out by rug risk or weak momentum
+    description: Tokens filtered out due to rug risk or weak momentum
 
 logic:
   steps:
     - Scan new token deployments and liquidity additions
-    - Track deployer and early wallet funding sources
+    - Track deployer wallets and early funding sources
     - Detect clusters of smart wallets accumulating
     - Measure volume acceleration and holder growth
-    - Cross-check every candidate against Rug Detector
-    - Rank tokens using weighted alpha score
+    - Call Rug Detector for every candidate token
+    - Reject any token with risk_score > 50 or rug_type != "safe"
+    - Rank remaining tokens using weighted alpha score
 
 alpha_factors:
-  smart_money_inflow: 0.30
-  deployer_reputation: 0.15
+  smart_money_inflow: 0.25
   liquidity_growth: 0.20
-  social_velocity: 0.15
+  rug_safety: 0.20
+  deployer_reputation: 0.15
+  social_velocity: 0.10
   holder_growth: 0.10
-  rug_safety: 0.10
 
 thresholds:
-  ignore: <30
-  watch: 30–60
-  strong: 60–80
-  ape: >80
-  
+  ignore: rug OR score < 30
+  watch: score 30–60 AND rug_safe
+  strong: score 60–80 AND rug_safe
+  ape: >80 AND rug_safe AND smart_wallets_detected
